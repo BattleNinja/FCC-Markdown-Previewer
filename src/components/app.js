@@ -30,7 +30,7 @@ export default class App extends Component {
         return {__html: marked(this.state.value)};
     }
     markeddownvalue() {
-        return <div dangerouslySetInnerHTML={this.createMarkup()} />;
+        return <div className="text-left" dangerouslySetInnerHTML={this.createMarkup()} />;
     }
 
 
@@ -38,12 +38,15 @@ export default class App extends Component {
         return (
             <div className="text-center">
                 <h1>Markdown previewer</h1>
+                <br/>
+                <br/>
                 <div className ="row">
-                    <div className="col-xs-6">
-                      <textarea value={this.state.value} onChange={(event)=>{this.handlechange(event)}} />
+                    <div className="col-xs-6 input">
+                        <br/>
+                        <br/>
+                      <textarea value={this.state.value} rows="40" cols="50" onChange={(event)=>{this.handlechange(event)}} />
                     </div>
-                    <div className="col-xs-6">
-                        <h1>Output</h1>
+                    <div className="col-xs-6 output">
                         {this.markeddownvalue()}
                     </div>
               </div>

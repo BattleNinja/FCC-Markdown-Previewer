@@ -1,0 +1,18 @@
+.text-center{
+    padding-top: 40px;
+}
+
+.output{
+    font-family: 'Ubuntu', sans-serif;
+    color: gray;
+    font-size: 15px;
+}
+.input{
+    font-family: 'Oxygen', sans-serif;
+    font-size: 15px;
+}
+
+textarea {
+    border: 5px solid orangered;
+    border-radius: 20px;
+}
